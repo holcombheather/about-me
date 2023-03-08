@@ -9,7 +9,7 @@ I built an app to tell the user more about me with a personalized user experienc
 ### Links and Resources
 
 * I heavily reference Jacob's code from the in class demo (https://github.com/codefellows/seattle-code-201d98/tree/main/class-02/demo)
-* Any Links you used as reference
+* I referenced this website for creating a multilevel list for my education and work history (https://www.computerhope.com/issues/ch001703.htm)
 
 ### Lighthouse Accessibility Report Score
 

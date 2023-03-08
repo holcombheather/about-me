@@ -1,0 +1,25 @@
+body {
+    color: #87a0a6;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header {
+    color:#87a0a6; 
+
+}
+
+.bio {
+    background-color: #fffbf5;
+    height: 200px;
+    margin-right: 10px;
+    padding: 15px;
+    width: 100%;
+    display: inline;
+    text-align: left;
+}
+
+h1 {
+    color: #c8a287;
+    text-align: right;
+    height: 100px;
+}
