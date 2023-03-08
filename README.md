@@ -15,7 +15,9 @@ I built an app to tell the user more about me with a personalized user experienc
 
 * Provide a screenshot of your score after running a Lighthouse Accessibility report.
 
+[screenshot of accessiblity report with score of 73](img/Screenshot.png)
+
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* Still confused on the reset.css and what content needs to be included in the file
+
