@@ -21,3 +21,10 @@ I built an app to tell the user more about me with a personalized user experienc
 
 * Still confused on the reset.css and what content needs to be included in the file
 
+# LAB - 03
+
+### Links and Resources
+
+For Question 6, I heavily referenced these two sources: 
+- https://www.udacity.com/blog/2021/04/javascript-while-loop.html 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while#examples 
