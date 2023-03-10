@@ -3,8 +3,8 @@
 
 // Greeting
 
-  let userName = prompt('What is your name?');
-  alert(`Hello ${userName}! Welcome to my site! Take a short quiz to test what you think you know about me!`);
+let userName = prompt('What is your name?');
+alert(`Hello ${userName}! Welcome to my site! Take a short quiz to test what you think you know about me!`);
 
 // 5 Questions about Me
 
@@ -33,26 +33,26 @@ const questions = [
 let quizScore = 0;
 function quiz() {
 
-for (let i = 0; i < questions.length; i++) {
+  for (let i = 0; i < questions.length; i++) {
 
-  const response = prompt(questions[i].question).toLowerCase();
+    const response = prompt(questions[i].question).toLowerCase();
 
-  if (response === questions[i].answer) {
+    if (response === questions[i].answer) {
 
-    console.log('Correct');
-    alert('Correct');
-    quizScore++;
+      console.log('Correct');
+      alert('Correct');
+      quizScore++;
 
-  } else {
+    } else {
 
-    console.log('Wrong');
-    alert('Sorry that is not correct');
+      console.log('Wrong');
+      alert('Sorry that is not correct');
+
+    }
 
   }
-
 }
-}
-quiz()
+quiz();
 
 
 // Question #6 Guess a Number
@@ -86,33 +86,32 @@ askMany('Guess how many years I\'ve had \'Learn to Code\' on my bucket list?');
 // Set up the question and its possible answers
 function codeQuiz() {
   const question = {
-      prompt: "What are some programming languages I want to learn?",
-      answers: ["JAVASCRIPT", "PYTHON", "C++"]
-    };
-    
-    // Set up the number of attempts allowed to 6 and track the initial score
-    const maxAttempts = 6;
-  
-    
-    // Loop through each question and ask the user for their guess
-    let attempts2 = 0;
-    let isCorrect = false;
-    while (attempts2 < maxAttempts && !isCorrect) {
-      let guess = prompt(`${question.prompt}. You have ${maxAttempts - attempts2} attempts left.`).toUpperCase();  
-      
-      if (question.answers.includes(guess)) {
-        alert("Correct!");
-        isCorrect = true;
-        quizScore++;
-      } else {
-        attempts2++;
-        alert("Incorrect. Try again.");
-      }
+    prompt: 'What are some programming languages I want to learn?',
+    answers: ['JAVASCRIPT', 'PYTHON', 'C++']
+  };
+
+  // Set up the number of attempts allowed to 6 and track the initial score
+  const maxAttempts = 6;
+
+  // Loop through each question and ask the user for their guess
+  let attempts2 = 0;
+  let isCorrect = false;
+  while (attempts2 < maxAttempts && !isCorrect) {
+    let guess = prompt(`${question.prompt} You have ${maxAttempts - attempts2} attempts left.`).toUpperCase();
+
+    if (question.answers.includes(guess)) {
+      alert('Correct!');
+      isCorrect = true;
+      quizScore++;
+    } else {
+      attempts2++;
+      alert('Incorrect. Try again.');
     }
-    alert(`The possible correct answers are: ${question.answers.join(", ")}.`);
   }
-  
-  codeQuiz();
+  alert(`The possible correct answers are: ${question.answers.join(", ")}.`);
+}
+
+codeQuiz();
 // Final Score + Thank you Message
 // Question 7 was worked on until it was too late and will be looked at later
 
@@ -121,17 +120,3 @@ alert(`You got ${quizScore} out of 7 questions correct. Thanks ${userName} for p
 
 
 
-
-// STRETCH GOAL 
-// let questions = [questionOne, questionTwo, questionThree, questionFour, questionFive];
-// let answers = ['no', 'no', 'yes', 'yes', 'yes'];
-// let response = null; 
-
-// for (let i=0; i < questions.length; i++) {
-//   response = prompt(questions[i]);
-//   if (response === answers[i]) {
-//     alert('correct!');
-//   } else {
-//     alert('Wrong :(');
-//   }
-// }
