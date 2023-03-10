@@ -89,27 +89,36 @@ if (attempts === 0) {
 
 // Question #7 Multiple Correct Answers
 
-let answerSeven = ['answerone', 'answertwo', 'answerthree'];
-let questionSeven;
-let i = 6;
-
-while (i > 0) {
-  questionSeven = prompt('Interesting question 7 here').toLowerCase();
-  if (answerSeven.includes(questionSeven)) {
-    alert("You did it! You got it right!");
-    break;
+// Set up the question and its possible answers
+const question = {
+    prompt: "What are some programming languages I want to learn?",
+    answers: ["JavaScript", "Python", "C++"]
+  };
+  
+  // Set up the number of attempts allowed to 6 and track the initial score
+  const maxAttempts = 6;
+  let score = 0;
+  
+  // Loop through each question and ask the user for their guess
+  let attempts2 = 0;
+  let isCorrect = false;
+  while (attempts2 < maxAttempts && !isCorrect) {
+    let guess = prompt(`${question.prompt}. You have ${maxAttempts - attempts2} attempts left.`).toLowerCase();
+    if (question.answers.includes(guess)) {
+      alert("Correct!");
+      isCorrect = true;
+      score++;
+    } else {
+      attempts2++;
+      alert("Incorrect. Try again.");
+    }
   }
-
-  attempts--;
-}
-
-
-
-
+  alert(`The possible correct answers are: ${question.answers.join(", ")}.`);
+  
 
 // Final Score + Thank you Message
 
-alert('Thanks ' + userName + ' for playing and I hope you learned a little more about me.');
+alert(`You got ${score} out of 7 questions correct.` 'Thanks ' + userName + ' for playing and I hope you learned a little more about me.');
 
 
 
