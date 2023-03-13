@@ -46,7 +46,7 @@ footer {
     background-color: rgba(181,134,118,.30)
 }
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero_img_aboutme.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero_img_aboutme.png); 
     background-color: #fffbf5;
     background-position: center;
     background-repeat: no-repeat;
