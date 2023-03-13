@@ -37,3 +37,5 @@ I was the Driver on: https://github.com/tbsharkey/About-Me/tree/lab-04Links to a
 ### Reflections and Comments
 
 Was diffcult to build on the website without an initial wireframe. I found it much more difficult to work on the css modifying the wireframe and content so significantly over multiple labs. Any tricks of the trade or tips? 
+
+I also attempted Google Fonts but couldn't get it to work successfully as either a local file or as an imported link. Would love to see a demo of this. 

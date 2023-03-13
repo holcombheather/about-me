@@ -21,8 +21,10 @@ header {
 h1 {
     color: #b58676;
     text-align: right;
-    height: 50%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-family: Geneva, sans-serif;
+    text-shadow:2px 2px 5px rgba(101,123,158,.5);
+    font-weight: 200;
 }
 
 h2 {
@@ -46,7 +48,7 @@ footer {
     background-color: rgba(181,134,118,.30)
 }
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero_img_aboutme.png); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), src="img/hero_img_aboutme.png"; 
     background-color: #fffbf5;
     background-position: center;
     background-repeat: no-repeat;
