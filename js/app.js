@@ -1,12 +1,7 @@
 'use strict';
 
-
-// Greeting
-
 let userName = prompt('What is your name?');
 alert(`Hello ${userName}! Welcome to my site! Take a short quiz to test what you think you know about me!`);
-
-// 5 Questions about Me
 
 const questions = [
   {
@@ -54,9 +49,6 @@ function quiz() {
 }
 quiz();
 
-
-// Question #6 Guess a Number
-
 function askMany(question, attempts = 4) {
   const answerSix = 10;
   while (attempts > 0) {
@@ -80,20 +72,14 @@ function askMany(question, attempts = 4) {
 
 askMany('Guess how many years I\'ve had \'Learn to Code\' on my bucket list?');
 
-
-// Question #7 Multiple Correct Answers
-
-// Set up the question and its possible answers
 function codeQuiz() {
   const question = {
     prompt: 'What are some programming languages I want to learn?',
     answers: ['JAVASCRIPT', 'PYTHON', 'C++']
   };
 
-  // Set up the number of attempts allowed to 6 and track the initial score
   const maxAttempts = 6;
 
-  // Loop through each question and ask the user for their guess
   let attempts2 = 0;
   let isCorrect = false;
   while (attempts2 < maxAttempts && !isCorrect) {
@@ -112,8 +98,6 @@ function codeQuiz() {
 }
 
 codeQuiz();
-// Final Score + Thank you Message
-// Question 7 was worked on until it was too late and will be looked at later
 
 alert(`You got ${quizScore} out of 7 questions correct. Thanks ${userName} for playing and I hope you learned a little more about me.`);
 

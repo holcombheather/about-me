@@ -1,28 +1,39 @@
+
 body {
-    color: #87a0a6;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0c3b3b;
+    color: #4e4f50;
+    background-color:#f3eeea;
     line-height: 2;
     padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     color: #87a0a6;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .bio {
-    height: 200px;
-    margin-right: 10px;
-    padding: 15px;
-    width: 100%;
-    display: inline;
-    text-align: left;
+    padding: 20px;
+    display: flex;
+    text-align: center;
 }
 
 h1 {
-    color: #c8a287;
+    color: #b58676;
     text-align: right;
-    height: 100px;
+    height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #b58676;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: #657b9e;
+
 }
 
 footer {
@@ -32,4 +43,97 @@ footer {
     width: 100%;
     text-align: center;
     padding: 10px;
+    background-color: rgba(181,134,118,.30)
 }
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/hero_img_aboutme.png); 
+    background-color: #fffbf5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    position: relative;
+}
+
+.hero-image h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        text-align: center;
+}
+
+#education {
+    color:#657b9e;
+    background-color: rgba(101,123,158,.8);
+    padding: 20px;
+}
+.educationName {
+    color: #f3eeea;
+}
+
+#workExperience {
+    background-color: rgba(181,134,118,.80);
+    padding: 20px;
+}
+
+#goal {
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.goalsList {
+    background-color: rgba(78,79,80,.60);
+    color:#f3eeea;
+    float: left;
+    width: 90%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.goalsImg {
+    float: right;
+    width: 10%;
+}
+
+.text_container {
+    float: left;
+    width: 70%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.img_container {
+    float: right;
+    width: 30%;
+}
+
+.eduTitle {
+    color: #f3eeea;
+}
+
+.bioTitle {
+    text-align: center;
+}
+
+.top-10-list {
+    margin-top: 20px;
+    margin: 10px;
+    padding: 20;
+  }
+  
+  .top-10-list li {
+    margin-left: 30px;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid #b58676;
+    padding: 10px;
+  }
+  
+  .top-10-list li:last-child {
+    border-bottom: none;
+  }
+
+  #topList {
+    text-align: center;
+  }

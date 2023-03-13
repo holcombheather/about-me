@@ -8,55 +8,69 @@
     </head>
     <body>
        <header>
-        <h1>Heather Holcomb</h1>
+        <div class="hero-image">
+            <h1 id="hero-image">Heather Holcomb</h1>
+            <img id="hero-image" src="img/hero_img_aboutme.png" alt="shadows on wall"/>
+        </div>
        </header>
         <section class="bio">
-            <h2>About Me</h2>
+            <div class="img_container">
+            <img src="img/profilepic.jpeg" alt="photo of Heather Holcomb"/>
+            </div>
+            <div class="text_container">
+            <h2 class="bioTitle">About Me</h2>
             <h4>Aspiring software engineer and experienced product leader, living and working in Los Angeles.</h4>
             <p>I'm passionate about helping diverse teams deliver innovative solutions that solve hard problems with experiences that customers love. I've led efforts from discovery to launch and beyond, with direct responsibility for day-to-day management of process and workflow. I've overseen large technical organizations, digital transformations and complex military operations and I'd love work with you.</p>
+            </div>
         </section>
-        <section>
-            <h2>Education History</h2>
+        <section id="education">
+            <h2 class="eduTitle">Education History</h2>
             <ul class="educationName">
                 <li>Code Fellows - Seattle, WA</li>
-                <ul class="educationDetail">
+                <ul>
                     <li>Certificate - Advanced Software Development in Full-Stack JavaScript - 2023</li>
                 </ul>
                 <li>University of North Texas - Denton, TX</li>
-                <ul class="educationDetail">
+                <ul>
                     <li>Bachelor of Arts in Political Science - 2010</li>
                     <li>Bachelor of Arts in International Studies - 2010</li>
                 </ul>
             </ul>
         </section>
-        <section>
-            <h2>Work Experience</h2>
+        <section id="workExperience">
+            <h2 class="eduTitle">Work Experience</h2>
             <ul class="educationName">
                 <li>PayPal Holdings Inc.</li>
-                <ul class="educationDetail">
+                <ul>
                     <li>Head of Product for the technology organization responsible for the infrastructure and site operations of the PayPal, Inc. platform serving 426 million active accounts and a total payment volume of $1.25 trillion.</li>
                     <li>Leading the transformation from a traditional IT operating model to a product-led organization focused on value creation at scale and directly enabling the business to advance leadership in digital payments.</li>
                     <li>Servant leader responsible for the growth and development of a strongt eam of technical product managers skilled in modern forms of customer discovery and identifying opportunities for differentiated value.</li>
                 </ul>
                 <li>United States Marine Corps</li>
-                <ul class="educationDetail">
+                <ul>
                     <li>Led multiple teams, ranging in size from 55 to 200 technical experts,through the operational planning, rapid deployment and maintenance of a secure and reliable IT infrastructure supporting tactical combat airfields.</li>
                     <li>Directed the 24/7 network and security operations center responsible for the monitoring and triage of critical voice and data services during military operations.</li>
                     <li>As the IT Project Officer for a $43 million dollar military training operation, successfully provided secure data and voice services for more than 20 agencies across 11 remote locations.</li>
                 </ul>
             </ul>
         </section>
-        <section>
-            <h2>Goals</h2>
+        <section id="goal">
+            <div class="goalImg">
+                <img src="img/desk_image.png" alt="photo of laptop on desk"/>
+            </div>
+            <div class="goalsList">
+            <h2 class="eduTitle">Goals</h2>
             <ul>
                 <li>Learn to code</li>
                 <li>Determine if I enjoy coding enough to pivot into software engineering</li>
                 <li>Discover new career aspritions building upon my new software development skills</li>
             </ul>
+            </div>
         </section>
         <section>
-            <h2>Top Ten Favorite Places to Eat in the World</h2>
-            <ol>
+            <div>
+            <h2 id="topList">Top Ten Favorite Places to Eat in the World</h2>
+            <ol class="top-10-list">
                 <li>Savoy - Tokyo, JP</li>
                 <li>Champa Thai - Kailua, HI</li>
                 <li>Colorado Donuts - Los Angeles, CA</li>
@@ -68,10 +82,13 @@
                 <li>Braums - Lewisville, TX</li>
                 <li>HIPPO - Los Angeles, CA</li>
             </ol>
+            </div>
         </section>
     </body>
     <footer>
-        <p>Powered by Code Fellows | Designed by Heather Holcomb</p>
+        <h5>Powered by <a href="https://www.codefellows.org/">Code Fellows</a></h5>
+        <h5>Designed by <a href="https://github.com/holcombheather">Heather Holcomb</a></h5>
+        <h5>2023</h5>
         <script src="js/app.js" defer></script>
     </footer>
 </html>
