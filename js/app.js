@@ -72,6 +72,7 @@ function askMany(question, attempts = 4) {
 
 askMany('Guess how many years I\'ve had \'Learn to Code\' on my bucket list?');
 
+
 function codeQuiz() {
   const question = {
     prompt: 'What are some programming languages I want to learn?',
@@ -85,7 +86,7 @@ function codeQuiz() {
   while (attempts2 < maxAttempts && !isCorrect) {
     let guess = prompt(`${question.prompt} You have ${maxAttempts - attempts2} attempts left.`).toUpperCase();
 
-    if (question.answers.includes(guess)) {
+    if (guess === 'JAVASCRIPT' || guess ==='PYTHON' || guess ==='C++' ) {
       alert('Correct!');
       isCorrect = true;
       quizScore++;
@@ -94,10 +95,11 @@ function codeQuiz() {
       alert('Incorrect. Try again.');
     }
   }
-  alert(`The possible correct answers are: ${question.answers.join(", ")}.`);
+  alert(`The possible correct answers are: ${question.answers.join(', ')}.`);
 }
 
 codeQuiz();
+
 
 alert(`You got ${quizScore} out of 7 questions correct. Thanks ${userName} for playing and I hope you learned a little more about me.`);
 
